@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Listado de máquinas</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Marca</th>
+          <th>Número de serie</th>
+          <th>Estado</th>
+          <th>Fecha de adquisición</th>
+          <th>Fecha de mantenimiento</th>
+          <th>Fecha de próximo mantenimiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let machine of machine">
+          <td>{{ machine.id_Machines }}</td>
+          <td>{{ machine.machines_Name }}</td>
+          <td>{{ machine.brand }}</td>
+          <td>{{ machine.serial_Number }}</td>
+          <td>{{ machine.status }}</td>
+          <td>{{ machine.acquisition_Date }}</td>
+          <td>{{ machine.maintenance_Date }}</td>
+          <td>{{ machine.next_Maintenance_Date }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
